@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(32, 24, 24);
+    min-height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    color: aliceblue;
+    padding: 100px 100px 0 110px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    /* background-color: blue; */
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    padding: 0 0 0 110px ;
+    text-decoration: none;
+    color: lightcyan;
+    font-size: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    float: right;
+    padding-right: 110px;
+    z-index: 100000;
+}
+
+.navbar a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.6rem;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+}
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+    /* padding: 2rem;
+} */
+
+.home-content {
+    /* margin: 100px 110px 0 110px; */
+    margin: 100px 110px 0 110px;
+}
+
+.btn-box {
+    margin: 0 0 0 100px;
+}
+/* .first-section {
+    margin: 100px 300px 0 300px;
+} */
+
+.about-description {
+    width: 50%;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 200;
+}
+
+.first-title {
+    font-size: 5rem;
+}
+
+.second-title {
+    font-size: 2rem;
+   
+}
+
+.about-heading, .projects {
+    font-size: 4rem;
+}
+
+.projects {
+    margin-left: 110px;
+}
+
+.about-description {
+    font-size: 1.5rem;
+    width: 50%;
+    float: left;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    /* background-color: black; */
+}
+
+.home-sci {
+    display: flex;
+    justify-content: center;
+}
+
+.home-sci a {
+    margin: 0 0.5rem;
+    color: lightcyan;
+    font-size: 1.5rem;
+}
+
+.home-sci i {
+    vertical-align: middle;
+}
+
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bruh-container {
+    margin-top: 110px;
+    min-height: 100vh;
+    /* background-color: darkgray; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bruh-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px; /* Adjust the gap between columns as needed */
+    max-width: 80%; /* Optional: set a maximum width for the grid */
+    width: 100%;
+}
+
+.box {
+    /* background-color: whitesmoke; */
+    width: 600px;
+    height: 500px;
+    margin: 10px 0 10px 0;
+}
+
+.about-me {
+    margin: 0 0 0 110px;
+    
+}
+
+.header, .first-section {
+    /* background-color: black; */
+}
+
+.section2 {
+    margin-top: 330px;
+    margin: 590px 0 590px 0;
+    /* background-color: gray; */
+    /* background-image: url(./kiri.jpeg); */
+}
+
+.section2 img {
+    padding: 20px 0 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+/* Find a solution to the about me header and the gap beteween the description
+One idea I have is put the header and description in a class with flexbox column 
+and then put the description and image in flexbox row idk if this will work tho */
+
+.project1, .project2 {
+    margin-bottom: 100px;
+}
+
+/* .desc {
+    max-width: 600px;
+}
+ */
+/* Need to make the description of project img the width of the img
+some reason it doesn't work */
+
+/* Instread of doing margin left on all of the elements you can just do it on the body
+change it later on when you can be bothered */
