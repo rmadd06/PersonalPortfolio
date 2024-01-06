@@ -182,7 +182,8 @@ body {
     border-radius: 10px;
     background-color: transparent;
     color: white;
-    background-color: rgb(28, 31, 167);
+    /* background-color: rgb(28, 31, 167); */
+    background-color: transparent;
     border: 2px solid black;
     margin-top: 10px;
 }
