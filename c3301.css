@@ -86,8 +86,12 @@ body {
     margin-top: 200px;
 }
 
+.section3 {
+    color: white;
+}
+
 .projects, .about-me, .progress, .home-content {
-    margin-left: 110px;
+    margin: 0 110px 0 100px;
 }
 
 .about-description {
