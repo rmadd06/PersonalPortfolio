@@ -18,12 +18,23 @@ body {
     background-image: linear-gradient(to right, #005c97, #363795);
 }
 
+/* HEIGHT OF EACH SECTION */
+
+.first-section, .section2 {
+    height: 100vh;
+}
+
+.section3 {
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
 .header {
     position: fixed;
     top: 0;
     width: 100%;
     padding: 1rem;
-    /* background-color: blue; */
 }
 
 .logo {
@@ -52,22 +63,30 @@ body {
 }
 
 .navbar a:hover{
-    color: red;
-}
-
-.home {
-    display: flex;
-    flex-direction: column;
-    min-height: 70vh;
+    color: rgb(41, 10, 218);
 }
 
 /* MARGINS */
 
+/* .first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+} */
+
 .home-content {
-    margin: 100px 110px 0 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* why doesn't it go in middle */
 }
 
-.projects, .about-me, .progress {
+.home-content {
+    margin-top: 200px;
+}
+
+.projects, .about-me, .progress, .home-content {
     margin-left: 110px;
 }
 
@@ -173,18 +192,17 @@ body {
     animation: fadeInUp 5s ease-out;
     animation-iteration-count: infinite;
   }
-  
-  @keyframes fadeInUp {
+
+@keyframes fadeInUp {
     0%, 100% {
-      opacity: 0.5;
-      /* transform: translateY(10px); */
+        opacity: 0.5;
     }
-  
+
     50% {
-      opacity: 1;
-      /* transform: translateY(0); */
+        opacity: 1;
     }
-  }
+}
+
   
   
   
