@@ -1,221 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Kanit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-weight: bold;
+    text-align: start;
+    color: white;
+    text-decoration: none;
 }
 
 body {
-    background-color: rgb(32, 24, 24);
-    min-height: 100vh;
-    font-family: 'Kanit', sans-serif;
-    color: aliceblue;
-    padding: 100px 100px 0 110px;
-    backdrop-filter: blur(100px);
-    background-image: linear-gradient(to right, #005c97, #363795);  
-}
-
-/* HEIGHT OF EACH SECTION */
-
-.first-section, .section2 {
+    color: black;
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(to right top, #5200ee, #0e2ad1, #0032af, #00328b, #002e64, #00355f, #103a58, #223e51, #195368, #00697a, #008087, #00978e);
+    background-size: cover;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.section3 {
-    min-height: 100vh;
+#home {
+    display: grid;
+    grid-template-columns: 230px 430px; /* Adjusted the width of each column */
+    justify-content: center;
+    align-content: start; /* Changed from center to start */
+    /* align-items: center to center the text */
+    gap: 30px;
+    padding: 20px;
 }
 
-/* NAVBAR */
-
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 1rem;
+.text-col {
+    line-height: 1.3;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
-.logo {
+.image-col {
+    text-align: center;
+}
+
+.the-bosh {
+    font-size: 3em;
+}
+
+.software-engineer {
+    font-size: 1.5em;
+}
+
+.image-col img {
+    border-radius: 10px;
+    border: 2px solid #0c7c75;
+}
+
+.text-col span {
+    color: #0c7c75;
+}
+
+.navbar a {
+    color: #000000;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.navbar a::after {
+    content: '';
     position: absolute;
+    bottom: 0;
     left: 0;
-    padding: 0 0 0 110px ;
-    text-decoration: none;
-    color: lightcyan;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+}
+
+  
+.home-sci a {
     font-size: 1.5rem;
 }
 
 .navbar {
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    float: right;
-    padding-right: 110px;
-    /* need to find a better way of doing navbar */
-}
-
-.navbar a {
-    color: aliceblue;
-    text-decoration: none;
-    margin-right: 10px;
-    font-size: 1.6rem;
-}
-
-.navbar a:hover{
-    color: rgb(41, 10, 218);
-}
-
-/* MARGINS */
-
-/* .first-section {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-self: center;
-} */
-
-.home-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* why doesn't it go in middle */
-}
-
-.home-content {
-    margin-top: 200px;
-}
-
-.section3 {
-    color: white;
-}
-
-.projects {
-    text-align: center;
-}
-
-.projects, .about-me, .progress, .home-content {
-    margin: 0 110px 0 100px;
-}
-
-.about-description {
-    width: 50%;
-    font-family: 'Courier Prime', monospace;
-    font-weight: 200;
-}
-
-.project1, .project2, .project3, .project4 {
-    margin-bottom: 100px;
-}
-
-/* FONT SIZES*/
-
-.first-title, .second-title, .about-heading, .projects {
-    font-size: 5rem;
-}
-
-.about-description {
-    font-size: 1.5rem;
+    gap: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: x-large;
 }
 
 .footer {
+    margin-top: 20px;
+    position: absolute;
     bottom: 0;
-    width: 100%;
+}
+
+.image-container img {
+    border-radius: 20px;
+}
+
+.descrip {
     text-align: center;
-    padding: 1rem;
 }
-
-.home-sci {
-    display: flex;
-    justify-content: center;
-}
-
-.home-sci a {
-    margin: 0 0.5rem;
-    color: lightcyan;
-    font-size: 1.5rem;
-}
-
-.about-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.project-container {
-    min-height: 100vh;
-    width: 40rem;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-.box {
-    width: 100%; 
-    min-width: 200px;
-    height: 300px; 
-    margin: 10px 0;
-    width: 40rem;
-}
-
-.section2 img {
-    border-radius: 5%;
-    margin-bottom: 15px;
-}
-
-.progress::-webkit-progress-bar {
-    background-color: black
-}
-
-.progress::-webkit-progress-value {
-    background-color: white;
-}
-
-.progress::-moz-progress-bar {
-    background-color: white;
-}
-
-.progress {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 12px;
-    background-color: #000000;
-}
-
-#scrollButton {
-    text-align: center;
-    cursor: pointer;
-    font-size: 1.2rem;
-    padding: 6px;
-    border-radius: 10px;
-    background-color: transparent;
-    color: white;
-    /* background-color: rgb(28, 31, 167); */
-    background-color: transparent;
-    border: 2px solid black;
-    margin-top: 10px;
-}
-
-/* .about-me {
-    opacity: 0.5;
-    animation: fadeInUp 5s ease-out;
-    animation-iteration-count: infinite;
-  } */
-
-/* @keyframes fadeInUp {
-    0%, 100% {
-        opacity: 0.5;
-    }
-
-    50% {
-        opacity: 1;
-    }
-} */
-
-  
-  
-  
 
 
