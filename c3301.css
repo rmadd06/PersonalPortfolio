@@ -27,6 +27,7 @@ body {
     /* align-items: center to center the text */
     gap: 30px;
     padding: 20px;
+    margin: 150px 0;
 }
 
 .text-col {
@@ -89,7 +90,6 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 1.5rem;
-    margin-bottom: 3rem;
     font-size: x-large;
 }
 
