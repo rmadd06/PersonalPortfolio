@@ -9,9 +9,9 @@
 }
 
 body {
-    color: black;
     backdrop-filter: blur(10px);
-    background-image: linear-gradient(to right top, #5200ee, #0e2ad1, #0032af, #00328b, #002e64, #00355f, #103a58, #223e51, #195368, #00697a, #008087, #00978e);
+    /* background-image: linear-gradient(to right top, #5200ee, #0e2ad1, #0032af, #00328b, #002e64, #00355f, #103a58, #223e51, #195368, #00697a, #008087, #00978e); */
+    background: linear-gradient(to top, #2E3CA5 0%, #121634 100%);
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -20,24 +20,27 @@ body {
 }
 
 #home {
+    overflow: hidden;
     display: grid;
-    grid-template-columns: 230px 430px; /* Adjusted the width of each column */
     justify-content: center;
-    align-content: start; /* Changed from center to start */
-    /* align-items: center to center the text */
-    gap: 30px;
-    padding: 20px;
+    align-items: center;
     margin: 150px 0;
+    margin-bottom: 20px;
 }
 
 .text-col {
     line-height: 1.3;
-    flex-grow: 1;
-    flex-shrink: 1;
+    margin-left: 120px;
+    grid-column: 1;
+    margin: 50px 20px;
+}
+
+.text-home {
+    margin: 25px 20px;
 }
 
 .image-col {
-    text-align: center;
+    grid-column: 2;
 }
 
 .the-bosh {
@@ -58,7 +61,6 @@ body {
 }
 
 .navbar a {
-    color: #000000;
     position: relative;
     font-size: 1.2em;
 }
@@ -91,6 +93,7 @@ body {
     gap: 20px;
     margin-top: 1.5rem;
     font-size: x-large;
+    color: darkgreen;
 }
 
 .footer {
@@ -103,8 +106,22 @@ body {
     border-radius: 20px;
 }
 
-.descrip {
-    text-align: center;
+.about {
+    margin: 60px 20px;
 }
 
+.about h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.descrip {
+    text-align: center;
+    width: 650px;
+    font-size: 20px;
+}
+
+.about h1, .descrip p {
+    margin-bottom: 20px;
+}
 
