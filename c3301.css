@@ -171,10 +171,34 @@ body {
 }
 
 .projects-text {
-    width: 650px;
+    max-width: 700px;
     margin: auto;
 }
 
+.projects {
+    margin-top: 150px;
+}
+
+.card {
+    display: grid;
+    margin: 0 auto;
+    max-width: 800px;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.card-text {
+    font-size: 17px;
+}
+
+.col1 {
+    grid-column: 1;
+}
+
+.card-text {
+    grid-column: 2;
+}
 
 
 
