@@ -176,7 +176,8 @@ body {
 }
 
 .project-left img {
-    height: auto;
+    height: 249px;
+    width: 459px;
 }
 
 .project-right {
