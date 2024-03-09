@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Varela+Round&display=swap');
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-weight: bold;
     text-align: start;
     color: var(--text-color);
     text-decoration: none;
@@ -23,10 +23,11 @@
 
 body {
     backdrop-filter: blur(10px);
-    background: linear-gradient(to top, var(--bg-color-2), #121634 100%);
+    background-image: url(rm218-bb-07.jpg);
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
+    /* padding-bottom: 100px; */
 }
 
 #home {
@@ -57,12 +58,11 @@ body {
 }
 
 .image-col img {
-    
-    height: 304px;
+    height: 308px;
 }
 
 .text-col span {
-    color: var(--text-span-and-hover); /* Updated with green theme color */
+    color: purple; /* Updated with green theme color */
 }
 
 .navbar a {
@@ -78,7 +78,7 @@ body {
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: var(--active-link); /* Updated with green theme color */
+    background-color: rgb(146, 6, 146); /* Updated with green theme color */
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.5s ease-in-out;
@@ -123,6 +123,10 @@ body {
     font-size: 32px;
 }
 
+.about h1 {
+    color: purple;
+}
+
 .descrip, .projects-text {
     text-align: center;
     width: 650px;
@@ -136,12 +140,13 @@ body {
 }
 
 .button1 {
-    background-color: var(--normal-button); /* Green theme button color */
+    background-color: purple; /* Green theme button color */
     color: white;
     padding: 11px 30px;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
+    border: 1px solid black;
     font-size: 16px;
     cursor: pointer;
     transition-duration: 0.4s;
@@ -150,31 +155,34 @@ body {
 }
 
 .button1:hover {
-    background-color: var(--normal-btn-hover); /* Green theme button hover color */
+    background-color: rgb(155, 0, 155); /* Green theme button hover color */
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.projects {
+.project {
     display: grid;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr; /* Define two equal-width columns */
+    gap: 25px; /* Optional: Adds space between the columns */
+    padding: 1.5625rem 0; /* Create space between each project, 25px */
     align-items: center;
-    margin-top: 3.125rem;
 }
 
-.col1 {
-    grid-column: 1;
+.project-left {
+    justify-self: end;
 }
 
-.card-text {
-    grid-column: 2;
+.project {
+    margin: 20px 0;
 }
 
-.card_n p {
+.project-left img {
+    height: auto;
+}
+
+.project-right {
     max-width: 25rem;
-}
-
-.card {
-    margin-bottom: 50px;
+    text-align: start;
+/*     align-self: center; */
 }
 
 
@@ -182,6 +190,7 @@ body {
     margin-top: 9.375rem;
     margin-bottom: 1.25rem;
     text-align: center;
+    color: purple;
 }
 
 .card img:hover {
@@ -189,13 +198,17 @@ body {
 }
 
 .footer {
-    position: absolute;
+    /* position: fixed;
+    position: absolute; */
+    position: sticky;
     left: 0; /* this sets the width to 100percent, better than width: 100vw; as it doesn't affect the scrollbar */
     right: 0;
     bottom: 0; /* Ensure it sticks to the bottom */
     display: flex;
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
+    gap: 5px;
+    margin: 100px 0;
 }
 
 
@@ -239,3 +252,4 @@ body {
         align-items: center; */
     }
 }
+
