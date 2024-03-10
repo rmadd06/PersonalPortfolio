@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Varela+Round&display=swap');
 
 * {
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     text-align: start;
-    color: var(--text-color);
+    color: black;
     text-decoration: none;
 }
 
@@ -19,11 +21,12 @@
     --normal-button: #259650;
     --normal-btn-hover: #3c9961;
     --normal-btn-active: #3A8B5E;
+    --normal-btn-bg: #FF983A;
 }
 
 body {
     backdrop-filter: blur(10px);
-    background-image: url(rm218-bb-07.jpg);
+    /* background-image: url(rm218-bb-07.jpg); */
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
@@ -61,14 +64,15 @@ body {
     height: 308px;
 }
 
-.text-col span {
-    color: purple; /* Updated with green theme color */
+.text-col h1, .software-engineer {
+    color: #1119D5; /* Updated with green theme color */
 }
 
 .navbar a {
     position: relative;
     font-size: 1.1em;
-    font-family: "Varela Round", sans-serif;
+    color: #1119D5;
+    font-weight: bold;
 }
 
 .navbar a::after {
@@ -140,7 +144,7 @@ body {
 }
 
 .button1 {
-    background-color: purple; /* Green theme button color */
+    background-color: var(--normal-btn-bg); /* Green theme button color */
     color: white;
     padding: 11px 30px;
     border-radius: 5px;
